@@ -276,7 +276,7 @@ on what kind of strategy you use to manage the heap. Different programs can use
 different ‘memory allocators’, which are libraries that manage this for you.
 Rust programs use [jemalloc][jemalloc] for this purpose.
 
-[jemalloc]: http://www.canonware.com/jemalloc/
+[jemalloc]: http://jemalloc.net/
 
 Anyway, back to our example. Since this memory is on the heap, it can stay
 alive longer than the function which allocates the box. In this case, however,
